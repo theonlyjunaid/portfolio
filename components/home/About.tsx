@@ -68,7 +68,7 @@ const About = ({
                         >
                             {aboutData.description}
                         </motion.p>
-                        <motion.p
+                        {/* <motion.p
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.8 }}
@@ -76,7 +76,7 @@ const About = ({
                             className="text-muted-foreground"
                         >
                             {aboutData.description2}
-                        </motion.p>
+                        </motion.p> */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
