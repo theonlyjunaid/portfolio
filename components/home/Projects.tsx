@@ -103,7 +103,7 @@ const Projects = ({
                                     </motion.div>
                                     {/* Always visible action buttons */}
                                     <div className="flex gap-3 mt-auto">
-                                        <Button
+                                        {project.link && <Button
                                             size="sm"
                                             variant="secondary"
                                             className="flex items-center gap-1 bg-primary/90 text-white hover:bg-primary"
@@ -112,8 +112,8 @@ const Projects = ({
                                             <Link href={project.link} target="_blank" rel="noopener noreferrer">
                                                 <ExternalLink className="h-4 w-4" /> Live
                                             </Link>
-                                        </Button>
-                                        <Button
+                                        </Button>}
+                                        {project.github && <Button
                                             size="sm"
                                             variant="outline"
                                             className="flex items-center gap-1 border-primary/40 text-primary hover:bg-primary/10"
@@ -122,7 +122,7 @@ const Projects = ({
                                             <Link href={project.github} target="_blank" rel="noopener noreferrer">
                                                 <Github className="h-4 w-4" /> Code
                                             </Link>
-                                        </Button>
+                                        </Button>}
                                     </div>
                                 </CardContent>
                             </Card>
