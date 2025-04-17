@@ -43,7 +43,7 @@ const Header = ({
                     onMouseLeave={handleLinkLeave}
                     onClick={() => scrollToSection("home")}
                 >
-                    <span className="text-primary">Dev</span>Portfolio
+                    <span className="text-primary">Junaid</span>Portfolio
                 </motion.div>
 
                 {/* Desktop Navigation */}

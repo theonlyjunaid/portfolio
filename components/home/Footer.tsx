@@ -4,6 +4,7 @@ import React from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
 import { Github, Linkedin, Mail } from 'lucide-react'
+import { aboutData } from '@/lib/constants'
 
 const Footer = ({
     handleLinkEnter,
@@ -24,7 +25,7 @@ const Footer = ({
                 >
                     <div className="mb-4 md:mb-0">
                         <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} John Doe. All rights reserved.
+                            © {new Date().getFullYear()} Junaid Malik.
                         </p>
                     </div>
                     <div className="flex gap-4">
@@ -36,7 +37,7 @@ const Footer = ({
                             onMouseEnter={() => handleLinkEnter("GitHub")}
                             onMouseLeave={handleLinkLeave}
                         >
-                            <Link href="https://github.com" target="_blank" aria-label="GitHub">
+                            <Link href={aboutData.contact.github} target="_blank" aria-label="GitHub">
                                 <Github className="h-5 w-5" />
                             </Link>
                         </Button>
@@ -48,7 +49,7 @@ const Footer = ({
                             onMouseEnter={() => handleLinkEnter("LinkedIn")}
                             onMouseLeave={handleLinkLeave}
                         >
-                            <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <Link href={aboutData.contact.linkedin} target="_blank" aria-label="LinkedIn">
                                 <Linkedin className="h-5 w-5" />
                             </Link>
                         </Button>
@@ -60,7 +61,7 @@ const Footer = ({
                             onMouseEnter={() => handleLinkEnter("Email")}
                             onMouseLeave={handleLinkLeave}
                         >
-                            <Link href="mailto:contact@example.com" aria-label="Email">
+                            <Link href={`mailto:${aboutData.contact.email}`} aria-label="Email">
                                 <Mail className="h-5 w-5" />
                             </Link>
                         </Button>

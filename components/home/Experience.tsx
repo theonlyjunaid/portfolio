@@ -70,21 +70,23 @@ const Experience = ({
                                     onMouseEnter={() => handleButtonEnter(exp.company)}
                                     onMouseLeave={handleButtonLeave}
                                 >
-                                    <div className="flex items-center gap-4 mb-4">
-                                        <div className="relative w-12 h-12 rounded-full overflow-hidden bg-muted/30 flex items-center justify-center">
-                                            <Image
-                                                src={exp.logo || "/placeholder.svg"}
-                                                alt={exp.company}
-                                                width={48}
-                                                height={48}
-                                                className="object-contain"
-                                            />
+                                    <a href={exp.link} target="_blank" rel="noopener noreferrer">
+                                        <div className="flex items-center gap-4 mb-4">
+                                            <div className="relative w-12 h-12 rounded-full overflow-hidden bg-muted/30 flex items-center justify-center">
+                                                <Image
+                                                    src={exp.logo || "/placeholder.svg"}
+                                                    alt={exp.company}
+                                                    width={48}
+                                                    height={48}
+                                                    className="object-contain"
+                                                />
+                                            </div>
+                                            <div>
+                                                <h3 className="text-xl font-bold text-primary">{exp.position}</h3>
+                                                <p className="text-muted-foreground">{exp.company}</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h3 className="text-xl font-bold text-primary">{exp.position}</h3>
-                                            <p className="text-muted-foreground">{exp.company}</p>
-                                        </div>
-                                    </div>
+                                    </a>
                                     <div className="mb-4">
                                         <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
                                             {exp.duration}

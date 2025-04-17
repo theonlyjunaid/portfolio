@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail, ChevronDown } from "lucide-react"
 import Image from "next/image"
 import AnimatedText from '../animated-text'
 import Link from 'next/link'
-import { heroData } from '@/lib/constants'
+import { aboutData, heroData } from '@/lib/constants'
 
 
 const Hero = ({
@@ -108,7 +108,7 @@ const Hero = ({
                                 onMouseEnter={() => handleLinkEnter("GitHub")}
                                 onMouseLeave={handleLinkLeave}
                             >
-                                <Link href="https://github.com" target="_blank" aria-label="GitHub">
+                                <Link href={aboutData.contact.github} target="_blank" aria-label="GitHub">
                                     <Github className="h-5 w-5" />
                                 </Link>
                             </Button>
@@ -120,7 +120,7 @@ const Hero = ({
                                 onMouseEnter={() => handleLinkEnter("LinkedIn")}
                                 onMouseLeave={handleLinkLeave}
                             >
-                                <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                <Link href={aboutData.contact.linkedin} target="_blank" aria-label="LinkedIn">
                                     <Linkedin className="h-5 w-5" />
                                 </Link>
                             </Button>
@@ -132,7 +132,7 @@ const Hero = ({
                                 onMouseEnter={() => handleLinkEnter("Email")}
                                 onMouseLeave={handleLinkLeave}
                             >
-                                <Link href="mailto:contact@example.com" aria-label="Email">
+                                <Link href={`mailto:${aboutData.contact.email}`} aria-label="Email">
                                     <Mail className="h-5 w-5" />
                                 </Link>
                             </Button>
@@ -148,7 +148,7 @@ const Hero = ({
                         <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-primary/20 ">
                             <Image
                                 src="/junaid avatar.png?height=400&width=400"
-                                alt="John Doe"
+                                alt="Junaid Malik"
                                 fill
                                 className="object-cover"
                                 priority

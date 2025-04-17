@@ -108,7 +108,7 @@ const About = ({
                             viewport={{ once: true }}
                         >
                             <Button
-                                onClick={() => window.open("/resume.pdf", "_blank")}
+                                onClick={() => window.open("/junaid-resume.pdf", "_blank")}
                                 className="group relative overflow-hidden"
                                 onMouseEnter={() => handleButtonEnter("Resume")}
                                 onMouseLeave={handleButtonLeave}

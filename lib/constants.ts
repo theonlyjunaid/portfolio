@@ -20,31 +20,36 @@ export const aboutData = {
         gpa: "7.2/10 (Till now)",
         duration: "2021– 2025",
         coursework: "Data Structures, Algorithms, Operating Systems, DBMS, Software Engineering, Cryptography, Artificial Intelligence"
+    },
+    contact: {
+        email: "onlyjunaid2002@gmail.com",
+        linkedin: "https://linkedin.com/in/theonlyjunaid",
+        github: "https://github.com/theonlyjunaid",
     }
 }
 
 export const experienceData = [
     {
-        company: "NOCAGE",
-        position: "Chief Technology Officer (CTO) and Lead Full Stack Developer",
+        company: "NOCAGE (Formerly Bridgein)",
+        position: "Tech co-founder",
         duration: "Jul 2024 - Apr 2025",
         description:
-            "Engineered 4 full-scale platforms using the T3 stack (Next.js, tRPC, PostgreSQL, Prisma) from ideation to deployment. Integrated OAuth2.0 authentication, WebSockets, RBAC, REST APIs, and AI-based recommendation engines. Mentored a team of 4 developers and implemented Agile practices. Achieved 99.9% uptime, supported 10K+ users, and deployed infrastructure using Digital Ocean App platform.",
-        logo: "/placeholder.svg?height=80&width=80",
-        link: "#",
+            "Engineered 4 full-scale platforms using the T3 stack (Next.js, tRPC, PostgreSQL, Prisma) from ideation to deployment. Integrated OAuth2.0 authentication, WebSockets, RBAC, REST APIs, and AI-based recommendation engines. Achieved 99.9% uptime, supported 10K+ users, and deployed infrastructure using Digital Ocean App platform.",
+        logo: "/nocage_logo.png?height=80&width=80",
+        link: "https://nocage.in",
     },
     {
         company: "HYPERLEAP",
         position: "Full Stack Developer Intern",
         duration: "Jun 2024 - Aug 2024",
         description:
-            "Created AI chat widgets using LLM, React.js, and Redux, improving lead capture by 35%. Designed chatbot analytics dashboard with multi-tenant support and JWT authentication.",
-        logo: "/placeholder.svg?height=80&width=80",
-        link: "#",
+            "Created plug-n-play chat widgets, improving lead capture by 35% and developed big chunk of dashboard with multi LLM support.",
+        logo: "/hyperleap_logo.svg?height=80&width=80",
+        link: "https://hyperleap.ai",
     },
     {
-        company: "WRAPYSHOP",
-        position: "Founder and Technical Lead",
+        company: "WRAPYSHOP (Shut Down)",
+        position: "Tech co-founder",
         duration: "Oct 2022 - Nov 2023",
         description:
             "Launched e-commerce platform for 600+ SKUs using Next.js, MongoDB, Razorpay, and Shiprocket API. Achieved 95+ Lighthouse score and handled 29,000+ PIN codes with automated inventory system. Deployed scalable SSR architecture with full SEO optimization and Google Analytics integration.",
@@ -56,8 +61,8 @@ export const experienceData = [
         duration: "Feb 2023 - Jun 2023",
         description:
             "Developed math-based GPT-3.5 query-solving system with payment gateway and admin dashboard. Boosted user engagement through predictive answer generation and performance tracking modules.",
-        logo: "/placeholder.svg?height=80&width=80",
-        link: "#",
+        logo: "/mathsloyal_logo.webp?height=80&width=80",
+        link: "https://mathsloyal.com",
     },
     {
         company: "FRESOURCES",
@@ -65,10 +70,11 @@ export const experienceData = [
         duration: "Jan 2022 - May 2023",
         description:
             "Optimized resource library with lazy-loaded PDFs, improving load speed by 45%. Scaled traffic to 1M+ peak monthly pageviews through SEO improvements and CDN integration.",
-        logo: "/placeholder.svg?height=80&width=80",
-        link: "#",
+        logo: "/fresources_logo.svg?height=80&width=80",
+        link: "https://fresources.tech",
     },
 ]
+
 
 
 export const skillsData = {
@@ -83,11 +89,11 @@ export const skillsData = {
         { name: "TailwindCSS", icon: "💨" },
         { name: "Appwrite", icon: "✍️" },
         { name: "tRPC", icon: "🔌" },
+        // { name: "Digital Ocean", icon: "☁️" },
     ],
     "I am good at": [
         { name: "React Native", icon: "📱" },
         { name: "Redux", icon: "🔄" },
-        { name: "Docker", icon: "🐳" },
         { name: "WebSockets", icon: "🔌" },
         { name: "SQL", icon: "🗄️" },
         { name: "Python", icon: "🐍" },
@@ -96,12 +102,15 @@ export const skillsData = {
         { name: "Supabase", icon: "🔌" },
         { name: "Pinecone", icon: "🌲" },
         { name: "AI Agents", icon: "🧩" },
+        { name: "Solidity", icon: "🔌" },
+        { name: "IPFS", icon: "🔌" },
+        // { name: "Web3", icon: "🔌" },
+        { name: "Docker", icon: "🐳" },
 
     ],
     "I am learning": [
-        { name: "AWS", icon: "☁️" },
-        { name: "Azure", icon: "☁️" },
         { name: "MCP", icon: "🧩" },
+
     ]
 }
 

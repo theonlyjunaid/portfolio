@@ -6,7 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
-import { projectsData } from '@/lib/constants'
+import { aboutData, projectsData } from '@/lib/constants'
 
 const Projects = ({
     projectsRef,
@@ -144,7 +144,7 @@ const Projects = ({
                         onMouseEnter={() => handleButtonEnter("GitHub")}
                         onMouseLeave={handleButtonLeave}
                     >
-                        <Link href="https://github.com/theonlyjunaid" target="_blank" rel="noopener noreferrer">
+                        <Link href={aboutData.contact.github} target="_blank" rel="noopener noreferrer">
                             <span className="relative z-10 flex items-center font-semibold">
                                 <Github className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
                                 View More on GitHub
