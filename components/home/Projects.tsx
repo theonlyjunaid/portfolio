@@ -144,7 +144,7 @@ const Projects = ({
                         onMouseEnter={() => handleButtonEnter("GitHub")}
                         onMouseLeave={handleButtonLeave}
                     >
-                        <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://github.com/theonlyjunaid" target="_blank" rel="noopener noreferrer">
                             <span className="relative z-10 flex items-center font-semibold">
                                 <Github className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
                                 View More on GitHub
