@@ -26,7 +26,7 @@ export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home")
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
   const [cursorVariant, setCursorVariant] = useState("default")
   const [cursorText, setCursorText] = useState("")
 
@@ -97,11 +97,11 @@ export default function Portfolio() {
     setMounted(true)
 
     // Simulate loading time
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 2500)
+    // const timer = setTimeout(() => {
+    //   setLoading(false)
+    // }, 2500)
 
-    return () => clearTimeout(timer)
+    // return () => clearTimeout(timer)
   }, [])
 
   const scrollToSection = (sectionId: string) => {
@@ -117,7 +117,7 @@ export default function Portfolio() {
   }
 
   if (!mounted) return null
-  if (loading) return <PreLoader />
+  // if (loading) return <PreLoader />
 
   return (
     <>
