@@ -40,7 +40,7 @@ export const experienceData = [
     },
     {
         company: "HYPERLEAP",
-        position: "Full Stack Developer Intern",
+        position: "Full Stack Developer",
         duration: "Jun 2024 - Aug 2024",
         description:
             "Created plug-n-play chat widgets, improving lead capture by 35% and developed big chunk of dashboard with multi LLM support.",
@@ -55,19 +55,11 @@ export const experienceData = [
             "Launched e-commerce platform for 600+ SKUs using Next.js, MongoDB, Razorpay, and Shiprocket API. Achieved 95+ Lighthouse score and handled 29,000+ PIN codes with automated inventory system. Deployed scalable SSR architecture with full SEO optimization and Google Analytics integration.",
         logo: "/placeholder.svg?height=80&width=80",
     },
-    {
-        company: "MATHSLOYAL",
-        position: "Full Stack Developer Intern",
-        duration: "Feb 2023 - Jun 2023",
-        description:
-            "Developed math-based GPT-3.5 query-solving system with payment gateway and admin dashboard. Boosted user engagement through predictive answer generation and performance tracking modules.",
-        logo: "/mathsloyal_logo.webp?height=80&width=80",
-        link: "https://mathsloyal.com",
-    },
+
     {
         company: "FRESOURCES",
         position: "Web Developer Intern",
-        duration: "Jan 2022 - May 2023",
+        duration: "Jan 2022 - Oct 2022",
         description:
             "Optimized resource library with lazy-loaded PDFs, improving load speed by 45%. Scaled traffic to 1M+ peak monthly pageviews through SEO improvements and CDN integration.",
         logo: "/fresources_logo.svg?height=80&width=80",
